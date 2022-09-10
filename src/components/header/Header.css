@@ -1,0 +1,58 @@
+.header {
+    width: 100vw;
+padding-top: 17px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    background-color: rgb(4, 90, 104);
+
+}
+
+.headerItem {
+    text-decoration: none;
+}
+
+
+.title{
+    width: 25vw;
+}
+.title{
+    padding-left: 10px;
+}
+.textColor{
+    color: aliceblue;
+    border: 2px solid rgb(4, 90, 104);
+    border-radius: 3px;
+    margin: 4px;
+    padding:  0px 10px 0px 10px;
+}
+.textColor:hover{
+    color: rgb(184, 186, 192);
+}
+.cartIcon{
+font-size: large;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.inputBar {
+    height: 24px;
+    width: 400px;
+   
+}
+.searchButton{
+    width: 100px;
+    height:30px;
+    margin-left: 2px;
+    font-size: larger;
+    background-color: rgb(8, 154, 176);
+    border: none;
+}
+.searchButton:hover{
+    background-color: rgb(7, 138, 158);
+    border: none;
+}
+.searchButton:active{
+    transform: scale(0.97);
+}
