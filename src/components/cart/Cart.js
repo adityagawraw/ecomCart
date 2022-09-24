@@ -14,15 +14,14 @@ export default function Cart() {
             <div>
                 <h1 className='h1'>Shopping Cart</h1>
                 <div className='cartItems'>
-                    {cartArr.map(item => {
+                    {cartArr.length>0?cartArr.map(item => {
                         return (
                             <CartItem
-
                                 key={item.id}
                                 item={item}
                             />
                         )
-                    })}
+                    }):<h1>No product in Cart!!!</h1>}
                 </div>
             </div>
             <CartTotal />

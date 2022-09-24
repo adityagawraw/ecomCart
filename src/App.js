@@ -7,7 +7,7 @@ import {CartContext} from './Context';
 import Login from './components/login/Login';
 
 function App() {
-let { productArr, setProductArr, searchArr, setSearchArr } =  useContext(CartContext)
+let { productArr, setProductArr } =  useContext(CartContext);
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
     .then(res => res.json())

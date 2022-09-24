@@ -4,7 +4,7 @@ import HomeItem from './HomeItem';
 import Categories from './Categories';
 import './Home.css';
 export default function Home() {
-    let { productArr, searchArr, setSearchArr } = useContext(CartContext)
+    let { productArr, searchArr, setSearchArr } = useContext(CartContext);
    useEffect(()=>{
     setSearchArr(productArr)
    },[]);

@@ -11,8 +11,6 @@ export default function HomeItem({ item }) {
     return (
         <div className='itemBox'>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-
-
             <img src={item.image} alt={item.title}></img>
             <div>{item.title}</div>
             <div><i class="fa fa-rupee"></i>{item.price}</div>
@@ -29,7 +27,7 @@ export default function HomeItem({ item }) {
                 console.log(cartArr);
                 return arr = [item, ...arr];
 
-            })}>{cartArr.includes(item) ? <div>Added</div> : <div>Add item</div>}</button>
+            })}>{flag ? <div>Added</div> : <div>Add item</div>}</button>
 
         </div>
     )
